@@ -6,6 +6,18 @@ Lua 5.1/5.2/5.3 in a self contained C file without external dependencies.
 
 This library is open source software licensed under the BSD two-clause license.
 
+Description
+===========
+
+This fork of [antirez/lua-cmsgpack](https://github.com/antirez/lua-cmsgpack) is working with
+the [OpenResty](https://openresty.org/) or [ngx_lua](https://github.com/openresty/lua-nginx-module).
+
+Use `make` to generate a `cmsgpack.so`, then write Lua code :
+
+```lua
+local cmsgpack = require "cmsgpack"
+```
+
 INSTALLATION
 ---
 
